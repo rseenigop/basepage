@@ -1,6 +1,7 @@
 package baseclasscode;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class baseclass {
@@ -13,6 +14,10 @@ public static WebDriver driver;
 							"C:\\Users\\Welcome\\Downloads\\chromedriver_win32 (3)\\chromedriver.exe");
 		driver = new ChromeDriver();
 		}
+		public static void entertxt(WebElement element, String data) {
+			element.sendKeys(data);
+		}
+
 		
 
 	}
