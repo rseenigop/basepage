@@ -22,6 +22,8 @@ public static WebDriver driver;
 		public static void entertxt(WebElement element, String data) {
 			element.sendKeys(data);
 		}
-				
+		public static void btnclick(WebElement element) {
+			element.click();
+		}
 	}
 
